@@ -1,0 +1,25 @@
+{
+  "row_bootstrap (current system)": {
+    "mr2_violations": 31,
+    "runs": 96,
+    "rate": 0.3229,
+    "ci95": [
+      0.2378,
+      0.4217
+    ],
+    "mr2_path_diverged": 31,
+    "mr1_violations": 0
+  },
+  "stratum_bootstrap (intervention)": {
+    "mr2_violations": 0,
+    "runs": 96,
+    "rate": 0.0,
+    "ci95": [
+      0.0,
+      0.0385
+    ],
+    "mr2_path_diverged": 0,
+    "mr1_violations": 0
+  },
+  "untransformed_source_runs_changed_by_intervention": 0
+}

@@ -1,0 +1,685 @@
+{
+  "criteria": {
+    "zipcodes": null,
+    "cities": [
+      "Plano"
+    ],
+    "tiers": null,
+    "min_price": 445000.0,
+    "max_price": 630000.0,
+    "min_sqft": null,
+    "max_sqft": null,
+    "window_end": "2025-11",
+    "currency_unit": "USD",
+    "confidence_target": 0.85,
+    "label": "B07-city-Plano"
+  },
+  "seed": 42,
+  "trend": {
+    "window_start": "2024-12",
+    "window_end": "2025-11",
+    "currency_unit": "USD",
+    "method": "stratified_median",
+    "monthly_series": [
+      {
+        "month": "2024-12",
+        "active_count": 457,
+        "n_zips": 6,
+        "median_price": 502500.0,
+        "median_price_per_sqft": 221.0,
+        "price_q1": 461725.0,
+        "price_q3": 606200.0,
+        "new_listings": 124,
+        "median_dom": 62.0,
+        "mom_pct_price": null
+      },
+      {
+        "month": "2025-01",
+        "active_count": 402,
+        "n_zips": 6,
+        "median_price": 502500.0,
+        "median_price_per_sqft": 221.0,
+        "price_q1": 460550.0,
+        "price_q3": 599000.0,
+        "new_listings": 224,
+        "median_dom": 66.0,
+        "mom_pct_price": 0.0
+      },
+      {
+        "month": "2025-02",
+        "active_count": 425,
+        "n_zips": 6,
+        "median_price": 507500.0,
+        "median_price_per_sqft": 221.0,
+        "price_q1": 460550.0,
+        "price_q3": 597750.0,
+        "new_listings": 268,
+        "median_dom": 47.0,
+        "mom_pct_price": 0.995024875621886
+      },
+      {
+        "month": "2025-03",
+        "active_count": 451,
+        "n_zips": 6,
+        "median_price": 507500.0,
+        "median_price_per_sqft": 221.0,
+        "price_q1": 463375.0,
+        "price_q3": 599450.0,
+        "new_listings": 304,
+        "median_dom": 37.0,
+        "mom_pct_price": 0.0
+      },
+      {
+        "month": "2025-04",
+        "active_count": 545,
+        "n_zips": 6,
+        "median_price": 514000.0,
+        "median_price_per_sqft": 222.0,
+        "price_q1": 468750.0,
+        "price_q3": 613700.0,
+        "new_listings": 338,
+        "median_dom": 36.0,
+        "mom_pct_price": 1.2807881773398977
+      },
+      {
+        "month": "2025-05",
+        "active_count": 558,
+        "n_zips": 5,
+        "median_price": 514000.0,
+        "median_price_per_sqft": 222.0,
+        "price_q1": 469900.0,
+        "price_q3": 613700.0,
+        "new_listings": 320,
+        "median_dom": 36.0,
+        "mom_pct_price": 0.0
+      },
+      {
+        "month": "2025-06",
+        "active_count": 788,
+        "n_zips": 6,
+        "median_price": 514000.0,
+        "median_price_per_sqft": 222.0,
+        "price_q1": 470870.0,
+        "price_q3": 640950.0,
+        "new_listings": 352,
+        "median_dom": 39.0,
+        "mom_pct_price": 0.0
+      },
+      {
+        "month": "2025-07",
+        "active_count": 818,
+        "n_zips": 6,
+        "median_price": 514000.0,
+        "median_price_per_sqft": 221.0,
+        "price_q1": 470870.0,
+        "price_q3": 647450.0,
+        "new_listings": 300,
+        "median_dom": 46.0,
+        "mom_pct_price": 0.0
+      },
+      {
+        "month": "2025-08",
+        "active_count": 937,
+        "n_zips": 7,
+        "median_price": 577750.0,
+        "median_price_per_sqft": 222.0,
+        "price_q1": 470870.0,
+        "price_q3": 672450.0,
+        "new_listings": 312,
+        "median_dom": 51.0,
+        "mom_pct_price": 12.40272373540856
+      },
+      {
+        "month": "2025-09",
+        "active_count": 872,
+        "n_zips": 7,
+        "median_price": 575000.0,
+        "median_price_per_sqft": 221.0,
+        "price_q1": 448999.0,
+        "price_q3": 650000.0,
+        "new_listings": 240,
+        "median_dom": 57.0,
+        "mom_pct_price": -0.47598442232800187
+      },
+      {
+        "month": "2025-10",
+        "active_count": 830,
+        "n_zips": 7,
+        "median_price": 569625.0,
+        "median_price_per_sqft": 220.0,
+        "price_q1": 448999.0,
+        "price_q3": 650000.0,
+        "new_listings": 264,
+        "median_dom": 59.0,
+        "mom_pct_price": -0.9347826086956501
+      },
+      {
+        "month": "2025-11",
+        "active_count": 642,
+        "n_zips": 6,
+        "median_price": 561950.0,
+        "median_price_per_sqft": 219.0,
+        "price_q1": 448999.0,
+        "price_q3": 639950.0,
+        "new_listings": 188,
+        "median_dom": 65.0,
+        "mom_pct_price": -1.347377660741711
+      }
+    ],
+    "trend_change_pct": 11.830845771144283,
+    "annual_cagr_estimate": 12.973426515398344,
+    "macro_divergence_score": 7.814144879906585,
+    "zip_rankings": [
+      {
+        "zipcode": "75093",
+        "city": "Plano",
+        "start_price": 620000.0,
+        "end_price": 649900.0,
+        "change_pct": 4.822580645161301,
+        "end_active": 86,
+        "rank": 1
+      },
+      {
+        "zipcode": "75094",
+        "city": "Plano",
+        "start_price": 632225.0,
+        "end_price": 649750.0,
+        "change_pct": 2.771956186484248,
+        "end_active": 54,
+        "rank": 2
+      },
+      {
+        "zipcode": "75075",
+        "city": "Plano",
+        "start_price": 499745.0,
+        "end_price": 499000.0,
+        "change_pct": -0.14907602877467507,
+        "end_active": 124,
+        "rank": 3
+      },
+      {
+        "zipcode": "75025",
+        "city": "Plano",
+        "start_price": 583950.0,
+        "end_price": 575000.0,
+        "change_pct": -1.5326654679339025,
+        "end_active": 134,
+        "rank": 4
+      },
+      {
+        "zipcode": "75023",
+        "city": "Plano",
+        "start_price": 460550.0,
+        "end_price": 448999.0,
+        "change_pct": -2.5080881554662926,
+        "end_active": 129,
+        "rank": 5
+      },
+      {
+        "zipcode": "75074",
+        "city": "Plano",
+        "start_price": 451200.0,
+        "end_price": 428500.0,
+        "change_pct": -5.031028368794321,
+        "end_active": 115,
+        "rank": 6
+      }
+    ],
+    "confidence": 0.7087199135038119,
+    "quality_audit_passed": true
+  },
+  "control": {
+    "relaxation_level": 1,
+    "relaxation_factor": 0.15,
+    "added_zips": [],
+    "method": "stratified_median",
+    "refinements": [
+      "temporal_pool_3",
+      "temporal_pool_5"
+    ]
+  },
+  "events": [
+    {
+      "step": 1,
+      "agent": "Orchestrator",
+      "action": "normalized_criteria",
+      "loop": null,
+      "iteration": null,
+      "detail": {
+        "n_zips": 7,
+        "window": [
+          "2024-12",
+          "2025-11"
+        ],
+        "bands": {
+          "min_price": 445000.0,
+          "max_price": 630000.0,
+          "min_sqft": null,
+          "max_sqft": null
+        },
+        "currency_unit": "USD"
+      },
+      "elapsed_ms": 0.46
+    },
+    {
+      "step": 2,
+      "agent": "DataScout",
+      "action": "scanned_snapshot",
+      "loop": null,
+      "iteration": 0,
+      "detail": {
+        "tool": "ListingFilterTool",
+        "relaxation_level": 0,
+        "relaxation_factor": 0.0,
+        "n_zips_in_scope": 7,
+        "added_zips": [],
+        "records_in_window": 43,
+        "active_listings_in_window": 5005,
+        "excluded_by_bands": 41,
+        "kaggle_listings_profiled": 1176
+      },
+      "elapsed_ms": 4.82
+    },
+    {
+      "step": 3,
+      "agent": "QualityAuditor",
+      "action": "audit_failed",
+      "loop": null,
+      "iteration": 0,
+      "detail": {
+        "coverage": 0.5833,
+        "sparse_months": [
+          "2025-02",
+          "2025-05",
+          "2025-09",
+          "2025-10",
+          "2025-11"
+        ],
+        "min_zips_per_month": 2,
+        "thresholds": {
+          "min_zips": 4,
+          "min_active": 40
+        },
+        "next_action": "relax_bands",
+        "reason": "5 sparse month(s) and the bands exclude 41 in-scope records: widen bands"
+      },
+      "elapsed_ms": 7.24
+    },
+    {
+      "step": 4,
+      "agent": "LoopSupervisor",
+      "action": "approved_cycle",
+      "loop": "feedback",
+      "iteration": 1,
+      "detail": {
+        "coverage_history": [
+          0.5833
+        ]
+      },
+      "elapsed_ms": 7.26
+    },
+    {
+      "step": 5,
+      "agent": "DataScout",
+      "action": "received_feedback",
+      "loop": "feedback",
+      "iteration": 1,
+      "detail": {
+        "feedback_action": "relax_bands",
+        "new_relaxation_level": 1,
+        "added_zips": []
+      },
+      "elapsed_ms": 7.26
+    },
+    {
+      "step": 6,
+      "agent": "DataScout",
+      "action": "scanned_snapshot",
+      "loop": "feedback",
+      "iteration": 1,
+      "detail": {
+        "tool": "ListingFilterTool",
+        "relaxation_level": 1,
+        "relaxation_factor": 0.15,
+        "n_zips_in_scope": 7,
+        "added_zips": [],
+        "records_in_window": 74,
+        "active_listings_in_window": 7725,
+        "excluded_by_bands": 10,
+        "kaggle_listings_profiled": 1176
+      },
+      "elapsed_ms": 9.99
+    },
+    {
+      "step": 7,
+      "agent": "QualityAuditor",
+      "action": "audit_passed",
+      "loop": "feedback",
+      "iteration": 1,
+      "detail": {
+        "coverage": 1.0,
+        "sparse_months": [],
+        "min_zips_per_month": 5,
+        "thresholds": {
+          "min_zips": 4,
+          "min_active": 40
+        },
+        "next_action": null,
+        "reason": ""
+      },
+      "elapsed_ms": 12.54
+    },
+    {
+      "step": 8,
+      "agent": "TrendSpecialist",
+      "action": "selected_method",
+      "loop": null,
+      "iteration": null,
+      "detail": {
+        "method": "stratified_median",
+        "reason": "homogeneous mix: plain stratified median",
+        "sqft_cv": 0.19931,
+        "bed_sigma": 0.364216,
+        "thresholds": {
+          "sqft_cv": 0.3,
+          "bed_sigma": 0.5
+        },
+        "extreme_sparsity": false
+      },
+      "elapsed_ms": 12.63
+    },
+    {
+      "step": 9,
+      "agent": "TrendSpecialist",
+      "action": "computed_trend",
+      "loop": null,
+      "iteration": null,
+      "detail": {
+        "tools": [
+          "StratifiedMedianTool",
+          "CagrCalculatorTool",
+          "MacroDivergenceTool"
+        ],
+        "method": "stratified_median",
+        "refinements": [],
+        "pool_months": 1,
+        "trimmed_records": 0,
+        "trend_change_pct": -0.1491,
+        "cagr_pct": -0.1626
+      },
+      "elapsed_ms": 20.92
+    },
+    {
+      "step": 10,
+      "agent": "Synthesizer",
+      "action": "scored_confidence",
+      "loop": null,
+      "iteration": null,
+      "detail": {
+        "confidence": 0.5657,
+        "target": 0.85,
+        "coverage": 1.0,
+        "stability": 0.5893,
+        "mean_rel_ci_halfwidth": 0.18509,
+        "relaxation_penalty": 0.04,
+        "bootstrap_seed": [
+          42,
+          0
+        ],
+        "verdict": "below_target"
+      },
+      "elapsed_ms": 21.84
+    },
+    {
+      "step": 11,
+      "agent": "LoopSupervisor",
+      "action": "approved_cycle",
+      "loop": "refinement",
+      "iteration": 1,
+      "detail": {
+        "confidence_history": [
+          0.5657
+        ]
+      },
+      "elapsed_ms": 22.06
+    },
+    {
+      "step": 12,
+      "agent": "Synthesizer",
+      "action": "requested_refinement",
+      "loop": "refinement",
+      "iteration": 1,
+      "detail": {
+        "directive": "temporal_pool_3",
+        "confidence": 0.5657
+      },
+      "elapsed_ms": 22.06
+    },
+    {
+      "step": 13,
+      "agent": "TrendSpecialist",
+      "action": "computed_trend",
+      "loop": "refinement",
+      "iteration": 1,
+      "detail": {
+        "tools": [
+          "StratifiedMedianTool",
+          "CagrCalculatorTool",
+          "MacroDivergenceTool"
+        ],
+        "method": "stratified_median",
+        "refinements": [
+          "temporal_pool_3"
+        ],
+        "pool_months": 3,
+        "trimmed_records": 0,
+        "trend_change_pct": -0.04,
+        "cagr_pct": -0.0436
+      },
+      "elapsed_ms": 30.57
+    },
+    {
+      "step": 14,
+      "agent": "Synthesizer",
+      "action": "scored_confidence",
+      "loop": "refinement",
+      "iteration": 1,
+      "detail": {
+        "confidence": 0.6815,
+        "target": 0.85,
+        "coverage": 1.0,
+        "stability": 0.7099,
+        "mean_rel_ci_halfwidth": 0.11992,
+        "relaxation_penalty": 0.04,
+        "bootstrap_seed": [
+          42,
+          1
+        ],
+        "verdict": "below_target"
+      },
+      "elapsed_ms": 32.04
+    },
+    {
+      "step": 15,
+      "agent": "LoopSupervisor",
+      "action": "approved_cycle",
+      "loop": "refinement",
+      "iteration": 2,
+      "detail": {
+        "confidence_history": [
+          0.5657,
+          0.6815
+        ]
+      },
+      "elapsed_ms": 32.06
+    },
+    {
+      "step": 16,
+      "agent": "Synthesizer",
+      "action": "requested_refinement",
+      "loop": "refinement",
+      "iteration": 2,
+      "detail": {
+        "directive": "temporal_pool_5",
+        "confidence": 0.6815
+      },
+      "elapsed_ms": 32.07
+    },
+    {
+      "step": 17,
+      "agent": "TrendSpecialist",
+      "action": "computed_trend",
+      "loop": "refinement",
+      "iteration": 2,
+      "detail": {
+        "tools": [
+          "StratifiedMedianTool",
+          "CagrCalculatorTool",
+          "MacroDivergenceTool"
+        ],
+        "method": "stratified_median",
+        "refinements": [
+          "temporal_pool_3",
+          "temporal_pool_5"
+        ],
+        "pool_months": 5,
+        "trimmed_records": 0,
+        "trend_change_pct": 11.8308,
+        "cagr_pct": 12.9734
+      },
+      "elapsed_ms": 40.18
+    },
+    {
+      "step": 18,
+      "agent": "Synthesizer",
+      "action": "scored_confidence",
+      "loop": "refinement",
+      "iteration": 2,
+      "detail": {
+        "confidence": 0.7087,
+        "target": 0.85,
+        "coverage": 1.0,
+        "stability": 0.7382,
+        "mean_rel_ci_halfwidth": 0.10622,
+        "relaxation_penalty": 0.04,
+        "bootstrap_seed": [
+          42,
+          2
+        ],
+        "verdict": "below_target"
+      },
+      "elapsed_ms": 42.17
+    },
+    {
+      "step": 19,
+      "agent": "LoopSupervisor",
+      "action": "approved_cycle",
+      "loop": "refinement",
+      "iteration": 3,
+      "detail": {
+        "confidence_history": [
+          0.5657,
+          0.6815,
+          0.7087
+        ]
+      },
+      "elapsed_ms": 42.19
+    },
+    {
+      "step": 20,
+      "agent": "Synthesizer",
+      "action": "refinements_exhausted",
+      "loop": "refinement",
+      "iteration": 3,
+      "detail": {
+        "confidence": 0.7087
+      },
+      "elapsed_ms": 42.2
+    },
+    {
+      "step": 21,
+      "agent": "Synthesizer",
+      "action": "delivered_report",
+      "loop": null,
+      "iteration": null,
+      "detail": {
+        "confidence": 0.7087,
+        "quality_audit_passed": true,
+        "caveats": 2
+      },
+      "elapsed_ms": 42.25
+    }
+  ],
+  "caveats": [
+    "Price/size bands were widened by \u00b115% to reach coverage.",
+    "Monthly medians were pooled with neighbouring months to stabilise thin months."
+  ],
+  "narrative": "Across 7 Dallas-area ZIP codes, the active-listing-weighted median list price rose from $502,500 in 2024-12 to $561,950 in 2025-11 (+11.83%, annualised +12.97%). Active listings moved from 457 to 642. Median $/sqft went from 221 to 219. Strongest ZIPs: 75093 (+4.8%), 75094 (+2.8%), 75075 (-0.1%). Method: stratified median; confidence 0.71.",
+  "diagnostics": {
+    "pinned": false,
+    "feedback_cycles": 1,
+    "refinement_cycles": 2,
+    "refinements_attempted": [
+      "temporal_pool_3",
+      "temporal_pool_5"
+    ],
+    "audit_history": [
+      {
+        "iteration": 0,
+        "coverage": 0.5833333333333333,
+        "action": "relax_bands"
+      },
+      {
+        "iteration": 1,
+        "coverage": 1.0,
+        "action": null
+      }
+    ],
+    "confidence_history": [
+      0.565729,
+      0.681498,
+      0.70872
+    ],
+    "confidence_components": {
+      "confidence": 0.7087199135038119,
+      "coverage": 1.0,
+      "stability": 0.7382499098998041,
+      "mean_rel_halfwidth": 0.10621550814131438,
+      "penalty": 0.04,
+      "cycle": 2
+    },
+    "method_signals": {
+      "sqft_cv": 0.19931,
+      "bed_sigma": 0.364216,
+      "thresholds": {
+        "sqft_cv": 0.3,
+        "bed_sigma": 0.5
+      },
+      "extreme_sparsity": false
+    },
+    "composition": {
+      "n_listings": 1176,
+      "bed_sigma": 0.36421567954234174,
+      "listing_sqft_cv": 0.4225797191646318,
+      "median_beds": 4.0,
+      "median_sqft": 2351.5
+    },
+    "zips_in_scope": [
+      "75023",
+      "75024",
+      "75025",
+      "75074",
+      "75075",
+      "75093",
+      "75094"
+    ],
+    "bands_used": {
+      "min_price": 378250.0,
+      "max_price": 724500.0,
+      "min_sqft": null,
+      "max_sqft": null
+    },
+    "supervisor_halts": [],
+    "runtime_ms": 42.26
+  }
+}

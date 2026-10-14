@@ -1,0 +1,157 @@
+{
+  "snapshot_version": "dfw-real-2026-10",
+  "all_values_real": true,
+  "synthetic_or_imputed_values": "none",
+  "months": [
+    "2022-12",
+    "2026-09"
+  ],
+  "n_zipcodes": 137,
+  "sources": {
+    "dfw_zip_month.csv": {
+      "source": "Realtor.com Residential Listings Database, ZIP-level monthly inventory (RDC_Inventory_Core_Metrics_Zip_History.csv)",
+      "unit": "one row = one ZIP code in one month; active_count = active for-sale listings in that ZIP-month",
+      "filters": {
+        "zip3_prefixes": [
+          "750",
+          "751",
+          "752",
+          "753"
+        ],
+        "months": [
+          "2022-12",
+          "2026-09"
+        ],
+        "radius_miles_from_downtown_dallas": 40.0,
+        "downtown_dallas_latlon": [
+          32.7767,
+          -96.797
+        ],
+        "dropped_zips_outside_radius": [
+          "75020",
+          "75021",
+          "75058",
+          "75076",
+          "75090",
+          "75092",
+          "75102",
+          "75103",
+          "75105",
+          "75109",
+          "75110",
+          "75117",
+          "75124",
+          "75127",
+          "75140",
+          "75143",
+          "75144",
+          "75147",
+          "75148",
+          "75153",
+          "75155",
+          "75156",
+          "75163",
+          "75169"
+        ],
+        "dropped_zips_without_census_centroid": [
+          "75016",
+          "75017",
+          "75047",
+          "75083",
+          "75086",
+          "75097",
+          "75151",
+          "75168",
+          "75260"
+        ],
+        "dropped_rows_missing_price_or_zero_active": 10
+      },
+      "license_note": "Public research data published by Realtor.com Economic Research; cite as Realtor.com Economic Research."
+    },
+    "dfw_listings_kaggle.csv": {
+      "source": "Kaggle: ahmedshahriarsakib/usa-real-estate-dataset (realtor-data.zip.csv, Realtor.com listings scraped 2021-2022)",
+      "unit": "one row = one listing (for_sale / sold / ready_to_build)",
+      "filters": {
+        "rows_in_selected_zips": 25413,
+        "rows_after_exact_duplicate_drop": 25356,
+        "note": "Exact duplicate rows (same street, zip, price, status, prev_sold_date) dropped. No imputation."
+      },
+      "use_in_system": "Listing-level composition profile (bedroom and size mix per ZIP) used by the Trend Specialist's method switch and shown in the Listing Explorer. Not used as a time series because its real dates span only Nov 2021-Apr 2022."
+    },
+    "macro_monthly.csv": {
+      "zhvi_metro": "Zillow ZHVI (all homes, mid-tier, smoothed, seasonally adjusted), Dallas-Fort Worth-Arlington metro",
+      "fred_median_listing_price": "FRED MEDLISPRI19100 (Realtor.com), DFW MSA",
+      "fred_active_listing_count": "FRED ACTLISCOU19100 (Realtor.com), DFW MSA",
+      "fred_median_ppsf": "FRED MEDLISPRIPERSQUFEE19100 (Realtor.com), DFW MSA",
+      "mortgage_rate_30y": "FRED MORTGAGE30US, monthly mean of weekly values",
+      "fhfa_hpi_quarterly": "FRED ATNHPIUS19124Q (FHFA all-transactions HPI, Dallas-Plano-Irving MSAD); only quarter-start months populated"
+    },
+    "zillow_zip_zhvi.csv": {
+      "source": "Zillow ZHVI by ZIP (all homes, mid-tier, smoothed, SA)"
+    },
+    "zip_geo.json": {
+      "source": "US Census Bureau 2024 Gazetteer ZCTA internal points; tier = quintile of the ZIP's median listing price over the latest 12 months"
+    }
+  },
+  "raw_download_manifest": {
+    "retrieved_at_utc": "2026-10-14T10:11:42+00:00",
+    "files": {
+      "realtor/rdc_zip_history_dfw.csv": {
+        "url": "https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_Zip_History.csv",
+        "upstream_sha256": "8398f34db172af4d41f6327093cb794bdb3bfeb3890f37fc52977d55ab8e507c",
+        "upstream_rows": 3480919,
+        "kept_rows": 19551
+      },
+      "kaggle/usa-real-estate-dataset.zip": {
+        "url": "https://www.kaggle.com/api/v1/datasets/download/ahmedshahriarsakib/usa-real-estate-dataset",
+        "sha256": "79b2d6c5322d3ae8cf236e3c3a14f36f918a57ebaddf6fe829f2c2c2a9d957c2"
+      },
+      "zillow/zip_zhvi_dfw.csv": {
+        "url": "https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv",
+        "upstream_sha256": "9dcd2793d97e5f60727bfc10563acdebe8461e48f8af83e09c333512a00521d9",
+        "upstream_rows": 26268,
+        "kept_rows": 154
+      },
+      "zillow/metro_zhvi.csv": {
+        "url": "https://files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv",
+        "sha256": "d4b5d78b88dbd08a9b83129a876de5190e1fce8b720dcec2e3b4944fe222b877"
+      },
+      "fred/MEDLISPRI19100.csv": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MEDLISPRI19100",
+        "description": "Realtor.com median listing price, Dallas-Fort Worth-Arlington MSA",
+        "sha256": "c6fb6be9964ab6db44e5632a234aebad3f9bcf49b10a8408cddf20ea3d6d9bb2"
+      },
+      "fred/ACTLISCOU19100.csv": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=ACTLISCOU19100",
+        "description": "Realtor.com active listing count, Dallas-Fort Worth-Arlington MSA",
+        "sha256": "4da35686bdc3fa3164633499363c75f55eec40eec5572fe06e6a346864a07013"
+      },
+      "fred/MEDLISPRIPERSQUFEE19100.csv": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MEDLISPRIPERSQUFEE19100",
+        "description": "Realtor.com median listing price per sq ft, Dallas-Fort Worth-Arlington MSA",
+        "sha256": "7b98e1480b937c0121dc89c19111cf2b8110a3b6f8ca79a651697e38f6bbaf0b"
+      },
+      "fred/MORTGAGE30US.csv": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MORTGAGE30US",
+        "description": "Freddie Mac 30-year fixed mortgage average (weekly)",
+        "sha256": "93663891f9167cf71dfd50b7cbe54ef60fab42f788371d84bf665fb1c5e6c354"
+      },
+      "fred/ATNHPIUS19124Q.csv": {
+        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=ATNHPIUS19124Q",
+        "description": "FHFA all-transactions HPI, Dallas-Plano-Irving MSAD (quarterly)",
+        "sha256": "85ad056d58fcf20cbe1e44a9792dfee1654930f94e1e93ea79af7ffad7051521"
+      },
+      "census/2024_Gaz_zcta_national.zip": {
+        "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_zcta_national.zip",
+        "sha256": "7b85c04a131672f58b38a950eb82855d5fd4054f0bd9bc3f69aa28897a714e3d"
+      }
+    }
+  },
+  "snapshot_sha256": {
+    "dfw_zip_month.csv": "bd2d416fdb68698362ea5e141bf107f0b761d08218d812255f1c497ebced8148",
+    "dfw_listings_kaggle.csv": "a5aae2abfe681a2fd3a80e5bcae4c10ba5ba96400dc9ba08850ec7480c56d894",
+    "macro_monthly.csv": "152dcd6fd72339bca0b4dce75fd0addb9ac599464c4ada330884d4994a25848a",
+    "zillow_zip_zhvi.csv": "5770b47a64de3ca33b1666f74655f194533016f46c700355569d781360b983ee",
+    "zip_geo.json": "b3aef9a76652a45822197c5516802b50112c9b000a1617f92c8e0f763812414c"
+  }
+}

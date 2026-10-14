@@ -1,0 +1,657 @@
+{
+  "by_mr": {
+    "MR1": {
+      "violations": 0,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 0,
+      "violations_with_control_divergence": 0,
+      "diverged_components": {},
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": null,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": []
+    },
+    "MR2": {
+      "violations": 31,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 0,
+      "violations_with_control_divergence": 31,
+      "diverged_components": {
+        "refinements": 31
+      },
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": 0.0257,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": [
+        {
+          "base": "B06-city-Dallas",
+          "seed": 2026,
+          "detail": {
+            "worst_field": "2023-07.median_price",
+            "count_not_doubled": []
+          },
+          "source": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [
+              "robust_trim",
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.776506917556249,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [],
+            "confidence": 0.6869286084023835,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B09-city-Garland",
+          "seed": 42,
+          "detail": {
+            "worst_field": "2025-01.median_price",
+            "count_not_doubled": []
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3"
+            ],
+            "confidence": 0.8830933450801073,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [],
+            "confidence": 0.8852749783020483,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B09-city-Garland",
+          "seed": 101,
+          "detail": {
+            "worst_field": "2025-01.median_price",
+            "count_not_doubled": []
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3"
+            ],
+            "confidence": 0.8793513839611017,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [],
+            "confidence": 0.8848188886906613,
+            "audit_passed": true
+          }
+        }
+      ],
+      "follow_confidence_minus_source_mean": 0.0506,
+      "audit_verdict_flipped": 0,
+      "fewer_refinements_in_follow_up": 30,
+      "fewer_relaxations_in_follow_up": 0
+    },
+    "MR3": {
+      "violations": 0,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 0,
+      "violations_with_control_divergence": 0,
+      "diverged_components": {},
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": null,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": []
+    },
+    "MR4": {
+      "violations": 61,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 60,
+      "violations_with_control_divergence": 4,
+      "diverged_components": {
+        "refinements": 4
+      },
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": 0.0745,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": [
+        {
+          "base": "B03-tier-Mid-Market",
+          "seed": 101,
+          "detail": {
+            "target_month": "2025-01",
+            "target_delta": -959.8614497804083,
+            "rise_over_x": -0.06399076331869388,
+            "target_decreased": true,
+            "target_count_delta": 325,
+            "upper_band_crossings": 1,
+            "lower_band_crossings": 4,
+            "worst_other_month": "2024-04",
+            "worst_other_rel_dev": 0.0,
+            "other_months_changed": []
+          },
+          "source": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [],
+            "confidence": 0.8602242027563187,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [],
+            "confidence": 0.8520393212809168,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B05-tier-Luxury",
+          "seed": 42,
+          "detail": {
+            "target_month": "2025-04",
+            "target_delta": 9117.31731204968,
+            "rise_over_x": 0.6078211541366453,
+            "target_decreased": false,
+            "target_count_delta": 110,
+            "upper_band_crossings": 0,
+            "lower_band_crossings": 1,
+            "worst_other_month": "2025-03",
+            "worst_other_rel_dev": 0.013671807254341984,
+            "other_months_changed": [
+              "2025-02",
+              "2025-03"
+            ]
+          },
+          "source": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [
+              "robust_trim",
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.8152865937121034,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [
+              "robust_trim",
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.8027866201347104,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B05-tier-Luxury",
+          "seed": 101,
+          "detail": {
+            "target_month": "2025-09",
+            "target_delta": 0.0,
+            "rise_over_x": 0.0,
+            "target_decreased": false,
+            "target_count_delta": 248,
+            "upper_band_crossings": 0,
+            "lower_band_crossings": 2,
+            "worst_other_month": "2025-10",
+            "worst_other_rel_dev": 0.05512308690205098,
+            "other_months_changed": [
+              "2025-07",
+              "2025-08",
+              "2025-10",
+              "2025-11"
+            ]
+          },
+          "source": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [
+              "robust_trim",
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.800238097301632,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [
+              "robust_trim",
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.804009593451515,
+            "audit_passed": true
+          }
+        }
+      ],
+      "categories": {
+        "target month fell: records crossed a price-band bound (enter from below / exit above)": 6,
+        "neighbouring months moved: temporal pooling carries the +X into the pooling radius": 56,
+        "non-adjacent months moved: refinement path diverged": 4
+      },
+      "categories_note": "a violation can fall in one 'target month' and one 'other months' category",
+      "rise_over_x_all_median": 0.2902,
+      "rise_over_x_hedonic_median": 0.4634,
+      "rise_within_10pct_of_x_share": 0.1458
+    },
+    "MR5": {
+      "violations": 18,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 0,
+      "violations_with_control_divergence": 18,
+      "diverged_components": {
+        "relaxation_level": 18,
+        "refinements": 3
+      },
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": 0.1307,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": [
+        {
+          "base": "B07-city-Plano",
+          "seed": 42,
+          "detail": {
+            "months_follow_below_source": {
+              "2025-02": 54,
+              "2025-04": 93,
+              "2025-06": 127,
+              "2025-07": 132,
+              "2025-08": 136,
+              "2025-09": 223,
+              "2025-10": 225
+            }
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7087199135038119,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7237534577421046,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B07-city-Plano",
+          "seed": 101,
+          "detail": {
+            "months_follow_below_source": {
+              "2025-02": 54,
+              "2025-04": 93,
+              "2025-06": 127,
+              "2025-07": 132,
+              "2025-08": 136,
+              "2025-09": 223,
+              "2025-10": 225
+            }
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7090208515181579,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7160508543101944,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B07-city-Plano",
+          "seed": 2026,
+          "detail": {
+            "months_follow_below_source": {
+              "2025-02": 54,
+              "2025-04": 93,
+              "2025-06": 127,
+              "2025-07": 132,
+              "2025-08": 136,
+              "2025-09": 223,
+              "2025-10": 225
+            }
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7122657171666703,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7321706971043676,
+            "audit_passed": true
+          }
+        }
+      ],
+      "source_relaxation_gt_follow": 18,
+      "follow_relaxation_gt_source": 0,
+      "follow_added_zips": 0,
+      "source_added_zips": 0,
+      "bases": [
+        "B07-city-Plano",
+        "B08-city-Irving",
+        "B14-city-Carrollton",
+        "B23-zips-7zips",
+        "B29-zips-7zips",
+        "B30-zips-15zips"
+      ]
+    },
+    "MR6": {
+      "violations": 18,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 0,
+      "violations_with_control_divergence": 18,
+      "diverged_components": {
+        "relaxation_level": 9,
+        "added_zips": 12,
+        "method": 3,
+        "refinements": 3
+      },
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": 0.0993,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": [
+        {
+          "base": "B07-city-Plano",
+          "seed": 42,
+          "detail": {
+            "months_follow_above_source": {
+              "2025-05": 56
+            },
+            "source_zips": 7,
+            "subset_zips": 3
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7087199135038119,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 2,
+            "added_zips": [
+              "75075",
+              "75093"
+            ],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.6437341623119018,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B07-city-Plano",
+          "seed": 101,
+          "detail": {
+            "months_follow_above_source": {
+              "2025-05": 56
+            },
+            "source_zips": 7,
+            "subset_zips": 3
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7090208515181579,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 2,
+            "added_zips": [
+              "75075",
+              "75093"
+            ],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.6641722713406281,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B07-city-Plano",
+          "seed": 2026,
+          "detail": {
+            "months_follow_above_source": {
+              "2025-05": 56
+            },
+            "source_zips": 7,
+            "subset_zips": 3
+          },
+          "source": {
+            "relaxation_level": 1,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.7122657171666703,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 2,
+            "added_zips": [
+              "75075",
+              "75093"
+            ],
+            "method": "stratified_median",
+            "refinements": [
+              "temporal_pool_3",
+              "temporal_pool_5"
+            ],
+            "confidence": 0.6704979486699507,
+            "audit_passed": true
+          }
+        }
+      ],
+      "source_relaxation_gt_follow": 0,
+      "follow_relaxation_gt_source": 9,
+      "follow_added_zips": 6,
+      "source_added_zips": 0,
+      "bases": [
+        "B07-city-Plano",
+        "B12-city-Richardson",
+        "B14-city-Carrollton",
+        "B20-zips-5zips",
+        "B22-zips-12zips",
+        "B26-zips-13zips"
+      ]
+    },
+    "MR7": {
+      "violations": 10,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 0,
+      "violations_with_control_divergence": 10,
+      "diverged_components": {
+        "refinements": 10
+      },
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": 0.0345,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": [
+        {
+          "base": "B01-tier-Entry",
+          "seed": 42,
+          "detail": {
+            "overlap_months": 11,
+            "worst_field": "2024-02.median_price",
+            "fields_changed": 10
+          },
+          "source": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [],
+            "confidence": 0.8521228395882197,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "robust_trim"
+            ],
+            "confidence": 0.8518814377596449,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B01-tier-Entry",
+          "seed": 101,
+          "detail": {
+            "overlap_months": 11,
+            "worst_field": "2024-02.median_price",
+            "fields_changed": 16
+          },
+          "source": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [],
+            "confidence": 0.8526149718836546,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "stratified_median",
+            "refinements": [
+              "robust_trim",
+              "temporal_pool_3"
+            ],
+            "confidence": 0.9183810364975352,
+            "audit_passed": true
+          }
+        },
+        {
+          "base": "B03-tier-Mid-Market",
+          "seed": 2026,
+          "detail": {
+            "overlap_months": 11,
+            "worst_field": "2025-01.median_price_per_sqft",
+            "fields_changed": 3
+          },
+          "source": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [],
+            "confidence": 0.8650499225329857,
+            "audit_passed": true
+          },
+          "follow": {
+            "relaxation_level": 0,
+            "added_zips": [],
+            "method": "hedonic",
+            "refinements": [
+              "robust_trim"
+            ],
+            "confidence": 0.8501158990277143,
+            "audit_passed": true
+          }
+        }
+      ],
+      "refinements_differ": 10,
+      "method_differs": 0,
+      "relaxation_differs": 0
+    },
+    "MR8": {
+      "violations": 0,
+      "executions": 96,
+      "violations_surviving_pinned_ablation": 0,
+      "violations_with_control_divergence": 0,
+      "diverged_components": {},
+      "crashes": [],
+      "median_source_conf_distance_to_target_violated": null,
+      "median_source_conf_distance_to_target_all": 0.0693,
+      "examples": []
+    }
+  },
+  "top3": [
+    "MR4",
+    "MR2",
+    "MR5"
+  ]
+}

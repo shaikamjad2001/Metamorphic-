@@ -1,0 +1,422 @@
+{
+ "generator_seed": 20261016,
+ "n": 32,
+ "base_inputs": [
+  {
+   "window_end": "2024-04",
+   "min_price": 75000.0,
+   "max_price": 390000.0,
+   "tiers": [
+    "Entry"
+   ],
+   "label": "B01-tier-Entry"
+  },
+  {
+   "window_end": "2026-04",
+   "min_price": 305000.0,
+   "max_price": 370000.0,
+   "tiers": [
+    "Value"
+   ],
+   "label": "B02-tier-Value"
+  },
+  {
+   "window_end": "2025-03",
+   "min_price": 410000.0,
+   "max_price": 620000.0,
+   "tiers": [
+    "Mid-Market"
+   ],
+   "label": "B03-tier-Mid-Market"
+  },
+  {
+   "window_end": "2026-06",
+   "min_price": 485000.0,
+   "max_price": 665000.0,
+   "tiers": [
+    "Upper"
+   ],
+   "label": "B04-tier-Upper"
+  },
+  {
+   "window_end": "2025-11",
+   "min_price": 685000.0,
+   "max_price": 1685000.0,
+   "tiers": [
+    "Luxury"
+   ],
+   "label": "B05-tier-Luxury"
+  },
+  {
+   "window_end": "2024-05",
+   "min_price": 250000.0,
+   "max_price": 815000.0,
+   "cities": [
+    "Dallas"
+   ],
+   "label": "B06-city-Dallas"
+  },
+  {
+   "window_end": "2025-11",
+   "min_price": 445000.0,
+   "max_price": 630000.0,
+   "cities": [
+    "Plano"
+   ],
+   "label": "B07-city-Plano"
+  },
+  {
+   "window_end": "2025-12",
+   "min_price": 320000.0,
+   "max_price": 545000.0,
+   "cities": [
+    "Irving"
+   ],
+   "label": "B08-city-Irving"
+  },
+  {
+   "window_end": "2025-07",
+   "min_price": 300000.0,
+   "max_price": 360000.0,
+   "cities": [
+    "Garland"
+   ],
+   "label": "B09-city-Garland"
+  },
+  {
+   "window_end": "2024-01",
+   "min_price": 550000.0,
+   "max_price": 1060000.0,
+   "cities": [
+    "Frisco"
+   ],
+   "label": "B10-city-Frisco"
+  },
+  {
+   "window_end": "2026-05",
+   "min_price": 500000.0,
+   "max_price": 565000.0,
+   "cities": [
+    "Mckinney"
+   ],
+   "min_sqft": 2180.0,
+   "max_sqft": 2780.0,
+   "label": "B11-city-Mckinney"
+  },
+  {
+   "window_end": "2025-01",
+   "min_price": 420000.0,
+   "max_price": 630000.0,
+   "cities": [
+    "Richardson"
+   ],
+   "label": "B12-city-Richardson"
+  },
+  {
+   "window_end": "2023-12",
+   "min_price": 285000.0,
+   "max_price": 440000.0,
+   "cities": [
+    "Mesquite"
+   ],
+   "min_sqft": 1500.0,
+   "max_sqft": 2480.0,
+   "label": "B13-city-Mesquite"
+  },
+  {
+   "window_end": "2026-08",
+   "min_price": 385000.0,
+   "max_price": 550000.0,
+   "cities": [
+    "Carrollton"
+   ],
+   "min_sqft": 1750.0,
+   "max_sqft": 2460.0,
+   "label": "B14-city-Carrollton"
+  },
+  {
+   "window_end": "2024-06",
+   "min_price": 305000.0,
+   "max_price": 540000.0,
+   "cities": [
+    "Grand Prairie"
+   ],
+   "label": "B15-city-Grand Prairie"
+  },
+  {
+   "window_end": "2026-07",
+   "min_price": 500000.0,
+   "max_price": 630000.0,
+   "cities": [
+    "Allen"
+   ],
+   "min_sqft": 2560.0,
+   "max_sqft": 3420.0,
+   "label": "B16-city-Allen"
+  },
+  {
+   "window_end": "2026-05",
+   "min_price": 400000.0,
+   "max_price": 415000.0,
+   "cities": [
+    "Rowlett"
+   ],
+   "label": "B17-city-Rowlett"
+  },
+  {
+   "window_end": "2025-07",
+   "min_price": 530000.0,
+   "max_price": 2300000.0,
+   "zipcodes": [
+    "75201",
+    "75202",
+    "75204",
+    "75205",
+    "75206",
+    "75209",
+    "75214",
+    "75219",
+    "75225",
+    "75230"
+   ],
+   "label": "B18-zips-10zips"
+  },
+  {
+   "window_end": "2025-07",
+   "min_price": 555000.0,
+   "max_price": 1465000.0,
+   "zipcodes": [
+    "75201",
+    "75202",
+    "75204",
+    "75205",
+    "75206"
+   ],
+   "label": "B19-zips-5zips"
+  },
+  {
+   "window_end": "2025-09",
+   "min_price": 785000.0,
+   "max_price": 2445000.0,
+   "zipcodes": [
+    "75209",
+    "75214",
+    "75219",
+    "75225",
+    "75230"
+   ],
+   "label": "B20-zips-5zips"
+  },
+  {
+   "window_end": "2025-04",
+   "min_price": 330000.0,
+   "max_price": 520000.0,
+   "zipcodes": [
+    "75043",
+    "75062",
+    "75074",
+    "75089",
+    "75134",
+    "75149",
+    "75158",
+    "75165",
+    "75207",
+    "75211",
+    "75234",
+    "75243"
+   ],
+   "label": "B21-zips-12zips"
+  },
+  {
+   "window_end": "2025-09",
+   "min_price": 315000.0,
+   "max_price": 525000.0,
+   "zipcodes": [
+    "75002",
+    "75007",
+    "75039",
+    "75063",
+    "75075",
+    "75087",
+    "75093",
+    "75132",
+    "75146",
+    "75215",
+    "75238",
+    "75249"
+   ],
+   "label": "B22-zips-12zips"
+  },
+  {
+   "window_end": "2026-05",
+   "min_price": 280000.0,
+   "max_price": 1375000.0,
+   "zipcodes": [
+    "75101",
+    "75146",
+    "75150",
+    "75159",
+    "75201",
+    "75238",
+    "75253"
+   ],
+   "min_sqft": 1330.0,
+   "max_sqft": 2370.0,
+   "label": "B23-zips-7zips"
+  },
+  {
+   "window_end": "2026-04",
+   "min_price": 365000.0,
+   "max_price": 1295000.0,
+   "zipcodes": [
+    "75023",
+    "75063",
+    "75068",
+    "75070",
+    "75081",
+    "75082",
+    "75093",
+    "75132",
+    "75142",
+    "75217",
+    "75220",
+    "75228",
+    "75240",
+    "75241",
+    "75287"
+   ],
+   "min_sqft": 1480.0,
+   "max_sqft": 3620.0,
+   "label": "B24-zips-15zips"
+  },
+  {
+   "window_end": "2024-02",
+   "min_price": 200000.0,
+   "max_price": 675000.0,
+   "zipcodes": [
+    "75028",
+    "75051",
+    "75207",
+    "75212",
+    "75231",
+    "75247",
+    "75252",
+    "75254"
+   ],
+   "label": "B25-zips-8zips"
+  },
+  {
+   "window_end": "2024-12",
+   "min_price": 190000.0,
+   "max_price": 670000.0,
+   "zipcodes": [
+    "75002",
+    "75013",
+    "75019",
+    "75022",
+    "75035",
+    "75038",
+    "75137",
+    "75142",
+    "75212",
+    "75217",
+    "75226",
+    "75231",
+    "75241"
+   ],
+   "label": "B26-zips-13zips"
+  },
+  {
+   "window_end": "2024-11",
+   "min_price": 360000.0,
+   "max_price": 620000.0,
+   "zipcodes": [
+    "75007",
+    "75013",
+    "75035",
+    "75044",
+    "75057",
+    "75065",
+    "75087",
+    "75150",
+    "75160",
+    "75164",
+    "75172",
+    "75182",
+    "75205",
+    "75209",
+    "75244"
+   ],
+   "label": "B27-zips-15zips"
+  },
+  {
+   "window_end": "2026-07",
+   "min_price": 295000.0,
+   "max_price": 555000.0,
+   "zipcodes": [
+    "75072",
+    "75116",
+    "75141",
+    "75182",
+    "75219"
+   ],
+   "min_sqft": 1440.0,
+   "max_sqft": 3910.0,
+   "label": "B28-zips-5zips"
+  },
+  {
+   "window_end": "2025-11",
+   "min_price": 305000.0,
+   "max_price": 595000.0,
+   "zipcodes": [
+    "75025",
+    "75034",
+    "75068",
+    "75098",
+    "75206",
+    "75234",
+    "75253"
+   ],
+   "min_sqft": 1600.0,
+   "max_sqft": 3550.0,
+   "label": "B29-zips-7zips"
+  },
+  {
+   "window_end": "2026-07",
+   "min_price": 320000.0,
+   "max_price": 500000.0,
+   "zipcodes": [
+    "75001",
+    "75022",
+    "75025",
+    "75039",
+    "75087",
+    "75119",
+    "75157",
+    "75158",
+    "75159",
+    "75180",
+    "75181",
+    "75210",
+    "75219",
+    "75246",
+    "75249"
+   ],
+   "min_sqft": 1420.0,
+   "max_sqft": 3750.0,
+   "label": "B30-zips-15zips"
+  },
+  {
+   "window_end": "2025-04",
+   "min_price": 270000.0,
+   "max_price": 1150000.0,
+   "label": "B31-metro-all"
+  },
+  {
+   "window_end": "2025-12",
+   "min_price": 315000.0,
+   "max_price": 1255000.0,
+   "label": "B32-metro-all"
+  }
+ ]
+}

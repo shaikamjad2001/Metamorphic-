@@ -1,0 +1,719 @@
+{
+  "generated_by": "run_headline_results.py",
+  "python": "3.14.0",
+  "elapsed_seconds": 41.8,
+  "snapshot_sha256": {
+    "dfw_zip_month.csv": "bd2d416fdb68698362ea5e141bf107f0b761d08218d812255f1c497ebced8148",
+    "dfw_listings_kaggle.csv": "a5aae2abfe681a2fd3a80e5bcae4c10ba5ba96400dc9ba08850ec7480c56d894",
+    "macro_monthly.csv": "152dcd6fd72339bca0b4dce75fd0addb9ac599464c4ada330884d4994a25848a",
+    "zillow_zip_zhvi.csv": "5770b47a64de3ca33b1666f74655f194533016f46c700355569d781360b983ee",
+    "zip_geo.json": "b3aef9a76652a45822197c5516802b50112c9b000a1617f92c8e0f763812414c"
+  },
+  "seeds": [
+    42,
+    101,
+    2026
+  ],
+  "base_inputs": {
+    "n": 32,
+    "generator_seed": 20261016,
+    "file": "mt/base_inputs.json",
+    "labels": [
+      "B01-tier-Entry",
+      "B02-tier-Value",
+      "B03-tier-Mid-Market",
+      "B04-tier-Upper",
+      "B05-tier-Luxury",
+      "B06-city-Dallas",
+      "B07-city-Plano",
+      "B08-city-Irving",
+      "B09-city-Garland",
+      "B10-city-Frisco",
+      "B11-city-Mckinney",
+      "B12-city-Richardson",
+      "B13-city-Mesquite",
+      "B14-city-Carrollton",
+      "B15-city-Grand Prairie",
+      "B16-city-Allen",
+      "B17-city-Rowlett",
+      "B18-zips-10zips",
+      "B19-zips-5zips",
+      "B20-zips-5zips",
+      "B21-zips-12zips",
+      "B22-zips-12zips",
+      "B23-zips-7zips",
+      "B24-zips-15zips",
+      "B25-zips-8zips",
+      "B26-zips-13zips",
+      "B27-zips-15zips",
+      "B28-zips-5zips",
+      "B29-zips-7zips",
+      "B30-zips-15zips",
+      "B31-metro-all",
+      "B32-metro-all"
+    ]
+  },
+  "protocol": "violation rate over (base input x seed) executions; Wilson score 95% CI (z = 1.96). Base-level rate counts a base as violated if any seed violates.",
+  "config": {
+    "BOOTSTRAP_RESAMPLES": 200,
+    "CONFIDENCE_TARGET": 0.85,
+    "CURRENCY_FACTORS": {
+      "USD": 1.0,
+      "USD_K": 0.001
+    },
+    "DEFAULT_WINDOW_END": "2026-09",
+    "DEGRADED_CONFIDENCE_CAP": 0.59,
+    "EXTREME_SPARSITY_ZIPS": 2,
+    "HEDONIC_BASE_SQFT": 1800.0,
+    "HEDONIC_BED_SIGMA_THRESHOLD": 0.5,
+    "HEDONIC_ELASTICITY": 0.75,
+    "HEDONIC_SQFT_CV_THRESHOLD": 0.3,
+    "MAX_FEEDBACK_CYCLES": 3,
+    "MAX_REFINEMENT_CYCLES": 3,
+    "MIN_ACTIVE_PER_MONTH": 40,
+    "MIN_VALID_PRICE_USD": 10000.0,
+    "MIN_ZIPS_PER_MONTH": 4,
+    "REFINEMENT_SEQUENCE": [
+      "robust_trim",
+      "temporal_pool_3",
+      "temporal_pool_5"
+    ],
+    "RELAXATION_PENALTY": 0.04,
+    "RELAXATION_SCHEDULE": [
+      0.15,
+      0.3,
+      0.45
+    ],
+    "ROBUST_TRIM_MAD": 3.5,
+    "ROBUST_TRIM_MIN_RECORDS": 8,
+    "SEEDS": [
+      42,
+      101,
+      2026
+    ],
+    "SPATIAL_EXPANSION_STEP": 2,
+    "STABILITY_SCALE": 0.35,
+    "WALL_CLOCK_BUDGET_S": 12.0,
+    "WINDOW_MONTHS": 12
+  },
+  "catalog": [
+    {
+      "id": "MR1",
+      "name": "Order / relabel invariance",
+      "family": "Invariance",
+      "transformation": "Randomly permute all ZIP-month records and assign fresh record IDs (seeded).",
+      "relation": "Every monthly active count, median price, median $/sqft, Q1/Q3 and the CAGR are unchanged.",
+      "subdomain": "All criteria; all windows.",
+      "tolerance": "relative difference <= 1e-5 (floating-point)",
+      "target_fault": "Order-dependent aggregation, unstable sort, index-sensitive grouping, order-dependent bootstrap."
+    },
+    {
+      "id": "MR2",
+      "name": "Duplicate invariance",
+      "family": "Invariance",
+      "transformation": "Append an exact copy of every record (2x dataset).",
+      "relation": "Monthly active counts exactly double; median price and median $/sqft unchanged.",
+      "subdomain": "All criteria; all windows.",
+      "tolerance": "counts exact; medians relative difference <= 1e-5",
+      "target_fault": "Unweighted averaging, count inflation in estimators, duplicate-key crashes, controllers that read raw row counts."
+    },
+    {
+      "id": "MR3",
+      "name": "Currency unit invariance (USD -> USD thousands)",
+      "family": "Invariance",
+      "transformation": "Multiply every price field and the criteria price bounds by 0.001 and switch the unit to USD_K.",
+      "relation": "Medians scale by exactly 0.001, MoM % changes, counts and the ZIP ranking are identical.",
+      "subdomain": "All criteria with price bounds expressed in the same unit.",
+      "tolerance": "scaled prices within 0.05 (follow-up unit); MoM within 1e-3 pp",
+      "target_fault": "Hard-coded dollar thresholds, unit-dependent rounding or truncation, non-homogeneous metrics."
+    },
+    {
+      "id": "MR4",
+      "name": "Additive monotonicity in one month",
+      "family": "Monotonic",
+      "transformation": "Add $15,000 to the list price of every record in one seeded window month (and $/sqft by 15000/sqft).",
+      "relation": "That month's median price does not decrease; every other month's median is unchanged.",
+      "subdomain": "Windows that contain the target month.",
+      "tolerance": "target delta >= 0; other months relative difference <= 1e-5",
+      "target_fault": "Temporal leakage across monthly bins, sign errors, inverted sorting."
+    },
+    {
+      "id": "MR5",
+      "name": "Price-band widening monotonicity",
+      "family": "Monotonic",
+      "transformation": "Widen the price band to [Pmin - 60,000, Pmax + 60,000].",
+      "relation": "Active-listing count of the follow-up is >= the source in every month.",
+      "subdomain": "Criteria with a price band.",
+      "tolerance": "exact (integer counts)",
+      "target_fault": "Filter inversion, boolean negation errors, lossy joins."
+    },
+    {
+      "id": "MR6",
+      "name": "Geographic restriction monotonicity",
+      "family": "Monotonic",
+      "transformation": "Restrict the ZIP set to the first half of the source's resolved ZIPs.",
+      "relation": "Active-listing count of the follow-up is <= the source in every month.",
+      "subdomain": "Criteria resolving to >= 2 ZIPs.",
+      "tolerance": "exact (integer counts)",
+      "target_fault": "Spatial boundary leakage, accidental outer joins, filters ignoring the ZIP set."
+    },
+    {
+      "id": "MR7",
+      "name": "Window slide consistency",
+      "family": "Directional",
+      "transformation": "Slide the 12-month window forward one month.",
+      "relation": "The 11 overlapping months have identical median price, median $/sqft and active count.",
+      "subdomain": "Window ends with a following month in the snapshot.",
+      "tolerance": "relative difference <= 1e-5",
+      "target_fault": "Off-by-one window boundaries, window-dependent processing of individual months."
+    },
+    {
+      "id": "MR8",
+      "name": "Multiplicative price scaling",
+      "family": "Directional",
+      "transformation": "Multiply every price field and the price bounds by k = 1.25.",
+      "relation": "Monthly medians scale by exactly 1.25; MoM % changes, counts and ZIP ranking unchanged.",
+      "subdomain": "All criteria.",
+      "tolerance": "scaled prices within $0.10; MoM within 1e-3 pp",
+      "target_fault": "Non-linear estimator distortions, improper normalisation in the hedonic adjustment, absolute thresholds."
+    },
+    {
+      "id": "MR4R",
+      "name": "Additive monotonicity, refined",
+      "family": "Monotonic",
+      "transformation": "As MR4.",
+      "relation": "Target month median does not decrease; months outside the follow-up's temporal pooling radius are unchanged.",
+      "subdomain": "Base inputs where no in-scope target-month record crosses a price-band bound under +$15,000.",
+      "tolerance": "target delta >= 0; months beyond the pooling radius relative difference <= 1e-5",
+      "target_fault": "Leakage beyond the declared pooling radius; sign errors."
+    }
+  ],
+  "results": {
+    "natural": [
+      {
+        "mr": "MR1",
+        "name": "Order / relabel invariance",
+        "family": "Invariance",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR2",
+        "name": "Duplicate invariance",
+        "family": "Invariance",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 31,
+        "violation_rate": 0.3229166666666667,
+        "ci95": [
+          0.23775702086652156,
+          0.4217035647010175
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 13,
+        "base_violation_rate": 0.40625,
+        "base_ci95": [
+          0.255194024803138,
+          0.5774027342701177
+        ],
+        "per_seed_rate": {
+          "42": 0.28125,
+          "101": 0.28125,
+          "2026": 0.40625
+        },
+        "seed_sensitive_bases": 5,
+        "violations_with_path_divergence": 31,
+        "crashes": 0
+      },
+      {
+        "mr": "MR3",
+        "name": "Currency unit invariance (USD -> USD thousands)",
+        "family": "Invariance",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR4",
+        "name": "Additive monotonicity in one month",
+        "family": "Monotonic",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 61,
+        "violation_rate": 0.6354166666666666,
+        "ci95": [
+          0.5356504026503102,
+          0.7247620907392187
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 25,
+        "base_violation_rate": 0.78125,
+        "base_ci95": [
+          0.6124466920955516,
+          0.8897630306846815
+        ],
+        "per_seed_rate": {
+          "42": 0.71875,
+          "101": 0.625,
+          "2026": 0.5625
+        },
+        "seed_sensitive_bases": 13,
+        "violations_with_path_divergence": 4,
+        "crashes": 0
+      },
+      {
+        "mr": "MR5",
+        "name": "Price-band widening monotonicity",
+        "family": "Monotonic",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 18,
+        "violation_rate": 0.1875,
+        "ci95": [
+          0.12202372252361303,
+          0.2770243696543969
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 6,
+        "base_violation_rate": 0.1875,
+        "base_ci95": [
+          0.08889423936162782,
+          0.3530949575492244
+        ],
+        "per_seed_rate": {
+          "42": 0.1875,
+          "101": 0.1875,
+          "2026": 0.1875
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 18,
+        "crashes": 0
+      },
+      {
+        "mr": "MR6",
+        "name": "Geographic restriction monotonicity",
+        "family": "Monotonic",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 18,
+        "violation_rate": 0.1875,
+        "ci95": [
+          0.12202372252361303,
+          0.2770243696543969
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 6,
+        "base_violation_rate": 0.1875,
+        "base_ci95": [
+          0.08889423936162782,
+          0.3530949575492244
+        ],
+        "per_seed_rate": {
+          "42": 0.1875,
+          "101": 0.1875,
+          "2026": 0.1875
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 18,
+        "crashes": 0
+      },
+      {
+        "mr": "MR7",
+        "name": "Window slide consistency",
+        "family": "Directional",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 10,
+        "violation_rate": 0.10416666666666667,
+        "ci95": [
+          0.0575709119553797,
+          0.1812233381367663
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 7,
+        "base_violation_rate": 0.21875,
+        "base_ci95": [
+          0.11023696931531854,
+          0.3875533079044484
+        ],
+        "per_seed_rate": {
+          "42": 0.0625,
+          "101": 0.125,
+          "2026": 0.125
+        },
+        "seed_sensitive_bases": 7,
+        "violations_with_path_divergence": 10,
+        "crashes": 0
+      },
+      {
+        "mr": "MR8",
+        "name": "Multiplicative price scaling",
+        "family": "Directional",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR4R",
+        "name": "Additive monotonicity, refined",
+        "family": "Monotonic",
+        "refined": true,
+        "n_executions": 41,
+        "n_not_applicable": 55,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.08567044886890744
+        ],
+        "n_base_inputs": 23,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.14312112541726274
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      }
+    ],
+    "pinned": [
+      {
+        "mr": "MR1",
+        "name": "Order / relabel invariance",
+        "family": "Invariance",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR2",
+        "name": "Duplicate invariance",
+        "family": "Invariance",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR3",
+        "name": "Currency unit invariance (USD -> USD thousands)",
+        "family": "Invariance",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR4",
+        "name": "Additive monotonicity in one month",
+        "family": "Monotonic",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 60,
+        "violation_rate": 0.625,
+        "ci95": [
+          0.5251053301827543,
+          0.7152754329460417
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 25,
+        "base_violation_rate": 0.78125,
+        "base_ci95": [
+          0.6124466920955516,
+          0.8897630306846815
+        ],
+        "per_seed_rate": {
+          "42": 0.6875,
+          "101": 0.625,
+          "2026": 0.5625
+        },
+        "seed_sensitive_bases": 13,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR5",
+        "name": "Price-band widening monotonicity",
+        "family": "Monotonic",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR6",
+        "name": "Geographic restriction monotonicity",
+        "family": "Monotonic",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR7",
+        "name": "Window slide consistency",
+        "family": "Directional",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR8",
+        "name": "Multiplicative price scaling",
+        "family": "Directional",
+        "refined": false,
+        "n_executions": 96,
+        "n_not_applicable": 0,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.03847694748481595
+        ],
+        "n_base_inputs": 32,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.1071827150573635
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      },
+      {
+        "mr": "MR4R",
+        "name": "Additive monotonicity, refined",
+        "family": "Monotonic",
+        "refined": true,
+        "n_executions": 41,
+        "n_not_applicable": 55,
+        "violations": 0,
+        "violation_rate": 0.0,
+        "ci95": [
+          0.0,
+          0.08567044886890744
+        ],
+        "n_base_inputs": 23,
+        "bases_violated_any_seed": 0,
+        "base_violation_rate": 0.0,
+        "base_ci95": [
+          0.0,
+          0.14312112541726274
+        ],
+        "per_seed_rate": {
+          "42": 0.0,
+          "101": 0.0,
+          "2026": 0.0
+        },
+        "seed_sensitive_bases": 0,
+        "violations_with_path_divergence": 0,
+        "crashes": 0
+      }
+    ]
+  }
+}

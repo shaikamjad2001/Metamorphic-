@@ -1,0 +1,1372 @@
+{
+ "75001": {
+  "zipcode": "75001",
+  "city": "Addison",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.960047,
+  "lon": -96.83724,
+  "distance_mi": 12.88
+ },
+ "75002": {
+  "zipcode": "75002",
+  "city": "Allen",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.089854,
+  "lon": -96.6086,
+  "distance_mi": 24.24
+ },
+ "75006": {
+  "zipcode": "75006",
+  "city": "Carrollton",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.962141,
+  "lon": -96.898585,
+  "distance_mi": 14.1
+ },
+ "75007": {
+  "zipcode": "75007",
+  "city": "Carrollton",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.005262,
+  "lon": -96.896742,
+  "distance_mi": 16.82
+ },
+ "75009": {
+  "zipcode": "75009",
+  "city": "Celina",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.338899,
+  "lon": -96.752977,
+  "distance_mi": 38.93
+ },
+ "75010": {
+  "zipcode": "75010",
+  "city": "Carrollton",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.039081,
+  "lon": -96.872596,
+  "distance_mi": 18.65
+ },
+ "75013": {
+  "zipcode": "75013",
+  "city": "Allen",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.114327,
+  "lon": -96.693964,
+  "distance_mi": 24.08
+ },
+ "75019": {
+  "zipcode": "75019",
+  "city": "Coppell",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.961253,
+  "lon": -96.985817,
+  "distance_mi": 16.81
+ },
+ "75022": {
+  "zipcode": "75022",
+  "city": "Flower Mound",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.024484,
+  "lon": -97.119504,
+  "distance_mi": 25.36
+ },
+ "75023": {
+  "zipcode": "75023",
+  "city": "Plano",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.056789,
+  "lon": -96.730859,
+  "distance_mi": 19.73
+ },
+ "75024": {
+  "zipcode": "75024",
+  "city": "Plano",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.077854,
+  "lon": -96.811028,
+  "distance_mi": 20.82
+ },
+ "75025": {
+  "zipcode": "75025",
+  "city": "Plano",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.090085,
+  "lon": -96.740008,
+  "distance_mi": 21.9
+ },
+ "75028": {
+  "zipcode": "75028",
+  "city": "Flower Mound",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.032998,
+  "lon": -97.064618,
+  "distance_mi": 23.55
+ },
+ "75032": {
+  "zipcode": "75032",
+  "city": "Rockwall",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.857112,
+  "lon": -96.43121,
+  "distance_mi": 21.96
+ },
+ "75033": {
+  "zipcode": "75033",
+  "city": "Frisco",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.184818,
+  "lon": -96.844308,
+  "distance_mi": 28.33
+ },
+ "75034": {
+  "zipcode": "75034",
+  "city": "Frisco",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.121286,
+  "lon": -96.838536,
+  "distance_mi": 23.93
+ },
+ "75035": {
+  "zipcode": "75035",
+  "city": "Frisco",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.166306,
+  "lon": -96.775635,
+  "distance_mi": 26.95
+ },
+ "75036": {
+  "zipcode": "75036",
+  "city": "Frisco",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.133351,
+  "lon": -96.914663,
+  "distance_mi": 25.57
+ },
+ "75038": {
+  "zipcode": "75038",
+  "city": "Irving",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.87226,
+  "lon": -96.97881,
+  "distance_mi": 12.45
+ },
+ "75039": {
+  "zipcode": "75039",
+  "city": "Irving",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.884959,
+  "lon": -96.937297,
+  "distance_mi": 11.06
+ },
+ "75040": {
+  "zipcode": "75040",
+  "city": "Garland",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.928902,
+  "lon": -96.619782,
+  "distance_mi": 14.71
+ },
+ "75041": {
+  "zipcode": "75041",
+  "city": "Garland",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.880196,
+  "lon": -96.651555,
+  "distance_mi": 11.07
+ },
+ "75042": {
+  "zipcode": "75042",
+  "city": "Garland",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.914495,
+  "lon": -96.674995,
+  "distance_mi": 11.87
+ },
+ "75043": {
+  "zipcode": "75043",
+  "city": "Garland",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.855772,
+  "lon": -96.578214,
+  "distance_mi": 13.83
+ },
+ "75044": {
+  "zipcode": "75044",
+  "city": "Garland",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.964609,
+  "lon": -96.649688,
+  "distance_mi": 15.55
+ },
+ "75048": {
+  "zipcode": "75048",
+  "city": "Sachse",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.969015,
+  "lon": -96.579523,
+  "distance_mi": 18.33
+ },
+ "75050": {
+  "zipcode": "75050",
+  "city": "Grand Prairie",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.773069,
+  "lon": -97.005227,
+  "distance_mi": 12.1
+ },
+ "75051": {
+  "zipcode": "75051",
+  "city": "Grand Prairie",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.725591,
+  "lon": -96.992072,
+  "distance_mi": 11.87
+ },
+ "75052": {
+  "zipcode": "75052",
+  "city": "Grand Prairie",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.664684,
+  "lon": -97.029478,
+  "distance_mi": 15.57
+ },
+ "75054": {
+  "zipcode": "75054",
+  "city": "Grand Prairie",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.613848,
+  "lon": -97.025353,
+  "distance_mi": 17.4
+ },
+ "75056": {
+  "zipcode": "75056",
+  "city": "The Colony",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.075699,
+  "lon": -96.908088,
+  "distance_mi": 21.64
+ },
+ "75057": {
+  "zipcode": "75057",
+  "city": "Lewisville",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 33.050725,
+  "lon": -96.974623,
+  "distance_mi": 21.56
+ },
+ "75060": {
+  "zipcode": "75060",
+  "city": "Irving",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.798049,
+  "lon": -96.952563,
+  "distance_mi": 9.16
+ },
+ "75061": {
+  "zipcode": "75061",
+  "city": "Irving",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.825907,
+  "lon": -96.966915,
+  "distance_mi": 10.44
+ },
+ "75062": {
+  "zipcode": "75062",
+  "city": "Irving",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.84737,
+  "lon": -96.957871,
+  "distance_mi": 10.54
+ },
+ "75063": {
+  "zipcode": "75063",
+  "city": "Irving",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.910627,
+  "lon": -97.000481,
+  "distance_mi": 15.01
+ },
+ "75065": {
+  "zipcode": "75065",
+  "city": "Lake Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.11034,
+  "lon": -97.00545,
+  "distance_mi": 26.03
+ },
+ "75067": {
+  "zipcode": "75067",
+  "city": "Lewisville",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.016102,
+  "lon": -96.998962,
+  "distance_mi": 20.27
+ },
+ "75068": {
+  "zipcode": "75068",
+  "city": "Little Elm",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.177497,
+  "lon": -96.952388,
+  "distance_mi": 29.12
+ },
+ "75069": {
+  "zipcode": "75069",
+  "city": "Mckinney",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.164093,
+  "lon": -96.59544,
+  "distance_mi": 29.21
+ },
+ "75070": {
+  "zipcode": "75070",
+  "city": "Mckinney",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.154678,
+  "lon": -96.696669,
+  "distance_mi": 26.76
+ },
+ "75071": {
+  "zipcode": "75071",
+  "city": "Mckinney",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.245816,
+  "lon": -96.63072,
+  "distance_mi": 33.81
+ },
+ "75072": {
+  "zipcode": "75072",
+  "city": "Mckinney",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.187899,
+  "lon": -96.699951,
+  "distance_mi": 28.96
+ },
+ "75074": {
+  "zipcode": "75074",
+  "city": "Plano",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.033284,
+  "lon": -96.672758,
+  "distance_mi": 19.14
+ },
+ "75075": {
+  "zipcode": "75075",
+  "city": "Plano",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.021268,
+  "lon": -96.741558,
+  "distance_mi": 17.2
+ },
+ "75077": {
+  "zipcode": "75077",
+  "city": "Lewisville",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.081178,
+  "lon": -97.060925,
+  "distance_mi": 26.02
+ },
+ "75078": {
+  "zipcode": "75078",
+  "city": "Prosper",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.241332,
+  "lon": -96.812388,
+  "distance_mi": 32.12
+ },
+ "75080": {
+  "zipcode": "75080",
+  "city": "Richardson",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.976063,
+  "lon": -96.74208,
+  "distance_mi": 14.14
+ },
+ "75081": {
+  "zipcode": "75081",
+  "city": "Richardson",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.949566,
+  "lon": -96.70742,
+  "distance_mi": 13.03
+ },
+ "75082": {
+  "zipcode": "75082",
+  "city": "Richardson",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.994599,
+  "lon": -96.666758,
+  "distance_mi": 16.85
+ },
+ "75087": {
+  "zipcode": "75087",
+  "city": "Rockwall",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.948579,
+  "lon": -96.442091,
+  "distance_mi": 23.78
+ },
+ "75088": {
+  "zipcode": "75088",
+  "city": "Rowlett",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.891629,
+  "lon": -96.541754,
+  "distance_mi": 16.81
+ },
+ "75089": {
+  "zipcode": "75089",
+  "city": "Rowlett",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.937583,
+  "lon": -96.544174,
+  "distance_mi": 18.41
+ },
+ "75093": {
+  "zipcode": "75093",
+  "city": "Plano",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.034224,
+  "lon": -96.811608,
+  "distance_mi": 17.81
+ },
+ "75094": {
+  "zipcode": "75094",
+  "city": "Plano",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 33.01983,
+  "lon": -96.613463,
+  "distance_mi": 19.89
+ },
+ "75098": {
+  "zipcode": "75098",
+  "city": "Wylie",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 33.014492,
+  "lon": -96.534832,
+  "distance_mi": 22.39
+ },
+ "75101": {
+  "zipcode": "75101",
+  "city": null,
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.270024,
+  "lon": -96.702449,
+  "distance_mi": 35.44
+ },
+ "75104": {
+  "zipcode": "75104",
+  "city": "Cedar Hill",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.584814,
+  "lon": -96.972312,
+  "distance_mi": 16.73
+ },
+ "75114": {
+  "zipcode": "75114",
+  "city": "Crandall",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.616552,
+  "lon": -96.443365,
+  "distance_mi": 23.35
+ },
+ "75115": {
+  "zipcode": "75115",
+  "city": "Desoto",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.599427,
+  "lon": -96.864075,
+  "distance_mi": 12.85
+ },
+ "75116": {
+  "zipcode": "75116",
+  "city": "Duncanville",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.66066,
+  "lon": -96.911882,
+  "distance_mi": 10.43
+ },
+ "75119": {
+  "zipcode": "75119",
+  "city": "Ennis",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.323915,
+  "lon": -96.590333,
+  "distance_mi": 33.52
+ },
+ "75125": {
+  "zipcode": "75125",
+  "city": "Ferris",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.53675,
+  "lon": -96.621707,
+  "distance_mi": 19.46
+ },
+ "75126": {
+  "zipcode": "75126",
+  "city": "Forney",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.742601,
+  "lon": -96.452883,
+  "distance_mi": 20.13
+ },
+ "75132": {
+  "zipcode": "75132",
+  "city": null,
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.938662,
+  "lon": -96.380424,
+  "distance_mi": 26.64
+ },
+ "75134": {
+  "zipcode": "75134",
+  "city": "Lancaster",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.622839,
+  "lon": -96.779517,
+  "distance_mi": 10.68
+ },
+ "75135": {
+  "zipcode": "75135",
+  "city": "Caddo Mills",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.067548,
+  "lon": -96.224353,
+  "distance_mi": 38.82
+ },
+ "75137": {
+  "zipcode": "75137",
+  "city": "Duncanville",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.634831,
+  "lon": -96.91341,
+  "distance_mi": 11.91
+ },
+ "75141": {
+  "zipcode": "75141",
+  "city": "Hutchins",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.639977,
+  "lon": -96.693284,
+  "distance_mi": 11.21
+ },
+ "75142": {
+  "zipcode": "75142",
+  "city": "Kaufman",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.568163,
+  "lon": -96.250215,
+  "distance_mi": 34.91
+ },
+ "75146": {
+  "zipcode": "75146",
+  "city": "Lancaster",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.566313,
+  "lon": -96.748636,
+  "distance_mi": 14.81
+ },
+ "75149": {
+  "zipcode": "75149",
+  "city": "Mesquite",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.773369,
+  "lon": -96.618811,
+  "distance_mi": 10.35
+ },
+ "75150": {
+  "zipcode": "75150",
+  "city": "Mesquite",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.813863,
+  "lon": -96.63098,
+  "distance_mi": 9.98
+ },
+ "75152": {
+  "zipcode": "75152",
+  "city": "Palmer",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.439871,
+  "lon": -96.678051,
+  "distance_mi": 24.28
+ },
+ "75154": {
+  "zipcode": "75154",
+  "city": "Red Oak",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.524259,
+  "lon": -96.809069,
+  "distance_mi": 17.46
+ },
+ "75157": {
+  "zipcode": "75157",
+  "city": "Rosser",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.463433,
+  "lon": -96.449255,
+  "distance_mi": 29.63
+ },
+ "75158": {
+  "zipcode": "75158",
+  "city": "Scurry",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.465314,
+  "lon": -96.401101,
+  "distance_mi": 31.52
+ },
+ "75159": {
+  "zipcode": "75159",
+  "city": "Seagoville",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.604328,
+  "lon": -96.5406,
+  "distance_mi": 19.08
+ },
+ "75160": {
+  "zipcode": "75160",
+  "city": "Terrell",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.764343,
+  "lon": -96.293313,
+  "distance_mi": 29.28
+ },
+ "75161": {
+  "zipcode": "75161",
+  "city": "Terrell",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.738794,
+  "lon": -96.163857,
+  "distance_mi": 36.88
+ },
+ "75164": {
+  "zipcode": "75164",
+  "city": null,
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 33.075574,
+  "lon": -96.303404,
+  "distance_mi": 35.3
+ },
+ "75165": {
+  "zipcode": "75165",
+  "city": "Waxahachie",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.371654,
+  "lon": -96.80303,
+  "distance_mi": 27.99
+ },
+ "75166": {
+  "zipcode": "75166",
+  "city": "Lavon",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 33.014721,
+  "lon": -96.449374,
+  "distance_mi": 26.02
+ },
+ "75167": {
+  "zipcode": "75167",
+  "city": "Waxahachie",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.360829,
+  "lon": -96.915523,
+  "distance_mi": 29.55
+ },
+ "75172": {
+  "zipcode": "75172",
+  "city": "Wilmer",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.605321,
+  "lon": -96.674073,
+  "distance_mi": 13.83
+ },
+ "75173": {
+  "zipcode": "75173",
+  "city": "Nevada",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 33.061737,
+  "lon": -96.395825,
+  "distance_mi": 30.48
+ },
+ "75180": {
+  "zipcode": "75180",
+  "city": "Balch Springs",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.719382,
+  "lon": -96.618565,
+  "distance_mi": 11.1
+ },
+ "75181": {
+  "zipcode": "75181",
+  "city": "Mesquite",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.723894,
+  "lon": -96.555946,
+  "distance_mi": 14.48
+ },
+ "75182": {
+  "zipcode": "75182",
+  "city": "Sunnyvale",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.800525,
+  "lon": -96.547577,
+  "distance_mi": 14.58
+ },
+ "75189": {
+  "zipcode": "75189",
+  "city": "Royse City",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.942052,
+  "lon": -96.311668,
+  "distance_mi": 30.4
+ },
+ "75201": {
+  "zipcode": "75201",
+  "city": "Dallas",
+  "neighborhood": "Downtown / Arts District",
+  "core_submarket": "Urban Core",
+  "price_tier": "Luxury",
+  "lat": 32.788309,
+  "lon": -96.799572,
+  "distance_mi": 0.82
+ },
+ "75202": {
+  "zipcode": "75202",
+  "city": "Dallas",
+  "neighborhood": "Downtown Historic",
+  "core_submarket": "Urban Core",
+  "price_tier": "Entry",
+  "lat": 32.778463,
+  "lon": -96.803734,
+  "distance_mi": 0.41
+ },
+ "75203": {
+  "zipcode": "75203",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.744319,
+  "lon": -96.801867,
+  "distance_mi": 2.26
+ },
+ "75204": {
+  "zipcode": "75204",
+  "city": "Dallas",
+  "neighborhood": "Uptown / State Thomas",
+  "core_submarket": "Mid-Market Residential",
+  "price_tier": "Upper",
+  "lat": 32.80219,
+  "lon": -96.78889,
+  "distance_mi": 1.82
+ },
+ "75205": {
+  "zipcode": "75205",
+  "city": "Dallas",
+  "neighborhood": "Highland Park / University Park",
+  "core_submarket": "Luxury Single-Family",
+  "price_tier": "Luxury",
+  "lat": 32.837129,
+  "lon": -96.797155,
+  "distance_mi": 4.18
+ },
+ "75206": {
+  "zipcode": "75206",
+  "city": "Dallas",
+  "neighborhood": "Lower Greenville / M Streets",
+  "core_submarket": "Mid-Market Residential",
+  "price_tier": "Mid-Market",
+  "lat": 32.831279,
+  "lon": -96.771191,
+  "distance_mi": 4.06
+ },
+ "75207": {
+  "zipcode": "75207",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.7877,
+  "lon": -96.820656,
+  "distance_mi": 1.57
+ },
+ "75208": {
+  "zipcode": "75208",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.754622,
+  "lon": -96.839633,
+  "distance_mi": 2.91
+ },
+ "75209": {
+  "zipcode": "75209",
+  "city": "Dallas",
+  "neighborhood": "Bluffview / Inwood",
+  "core_submarket": "Luxury Single-Family",
+  "price_tier": "Luxury",
+  "lat": 32.84831,
+  "lon": -96.825474,
+  "distance_mi": 5.22
+ },
+ "75210": {
+  "zipcode": "75210",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.771314,
+  "lon": -96.747148,
+  "distance_mi": 2.92
+ },
+ "75211": {
+  "zipcode": "75211",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.736827,
+  "lon": -96.907506,
+  "distance_mi": 6.99
+ },
+ "75212": {
+  "zipcode": "75212",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.78225,
+  "lon": -96.878833,
+  "distance_mi": 4.77
+ },
+ "75214": {
+  "zipcode": "75214",
+  "city": "Dallas",
+  "neighborhood": "Lakewood",
+  "core_submarket": "Mid-Market Residential",
+  "price_tier": "Luxury",
+  "lat": 32.828956,
+  "lon": -96.742915,
+  "distance_mi": 4.79
+ },
+ "75215": {
+  "zipcode": "75215",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.752897,
+  "lon": -96.761,
+  "distance_mi": 2.66
+ },
+ "75216": {
+  "zipcode": "75216",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.711324,
+  "lon": -96.781215,
+  "distance_mi": 4.61
+ },
+ "75217": {
+  "zipcode": "75217",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.712583,
+  "lon": -96.682045,
+  "distance_mi": 8.02
+ },
+ "75218": {
+  "zipcode": "75218",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.840254,
+  "lon": -96.704041,
+  "distance_mi": 6.96
+ },
+ "75219": {
+  "zipcode": "75219",
+  "city": "Dallas",
+  "neighborhood": "Oak Lawn / Turtle Creek",
+  "core_submarket": "Mid-Market Residential",
+  "price_tier": "Upper",
+  "lat": 32.810904,
+  "lon": -96.813203,
+  "distance_mi": 2.54
+ },
+ "75220": {
+  "zipcode": "75220",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.868529,
+  "lon": -96.876118,
+  "distance_mi": 7.83
+ },
+ "75223": {
+  "zipcode": "75223",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.792565,
+  "lon": -96.745584,
+  "distance_mi": 3.18
+ },
+ "75224": {
+  "zipcode": "75224",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.711405,
+  "lon": -96.838591,
+  "distance_mi": 5.12
+ },
+ "75225": {
+  "zipcode": "75225",
+  "city": "Dallas",
+  "neighborhood": "Preston Hollow",
+  "core_submarket": "Luxury Single-Family",
+  "price_tier": "Luxury",
+  "lat": 32.864887,
+  "lon": -96.790359,
+  "distance_mi": 6.11
+ },
+ "75226": {
+  "zipcode": "75226",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.783102,
+  "lon": -96.776627,
+  "distance_mi": 1.26
+ },
+ "75227": {
+  "zipcode": "75227",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.76681,
+  "lon": -96.6869,
+  "distance_mi": 6.43
+ },
+ "75228": {
+  "zipcode": "75228",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.824924,
+  "lon": -96.679438,
+  "distance_mi": 7.6
+ },
+ "75229": {
+  "zipcode": "75229",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.893614,
+  "lon": -96.867317,
+  "distance_mi": 9.05
+ },
+ "75230": {
+  "zipcode": "75230",
+  "city": "Dallas",
+  "neighborhood": "North Dallas / Forest Hills",
+  "core_submarket": "Luxury Single-Family",
+  "price_tier": "Luxury",
+  "lat": 32.902679,
+  "lon": -96.793393,
+  "distance_mi": 8.71
+ },
+ "75231": {
+  "zipcode": "75231",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.873494,
+  "lon": -96.747555,
+  "distance_mi": 7.28
+ },
+ "75232": {
+  "zipcode": "75232",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.658999,
+  "lon": -96.839593,
+  "distance_mi": 8.5
+ },
+ "75233": {
+  "zipcode": "75233",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.703913,
+  "lon": -96.871889,
+  "distance_mi": 6.65
+ },
+ "75234": {
+  "zipcode": "75234",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.924853,
+  "lon": -96.888139,
+  "distance_mi": 11.52
+ },
+ "75235": {
+  "zipcode": "75235",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.832614,
+  "lon": -96.849082,
+  "distance_mi": 4.91
+ },
+ "75236": {
+  "zipcode": "75236",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.688844,
+  "lon": -96.93571,
+  "distance_mi": 10.09
+ },
+ "75237": {
+  "zipcode": "75237",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.664916,
+  "lon": -96.872401,
+  "distance_mi": 8.88
+ },
+ "75238": {
+  "zipcode": "75238",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.878511,
+  "lon": -96.707852,
+  "distance_mi": 8.73
+ },
+ "75240": {
+  "zipcode": "75240",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.930154,
+  "lon": -96.792727,
+  "distance_mi": 10.61
+ },
+ "75241": {
+  "zipcode": "75241",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.666747,
+  "lon": -96.758878,
+  "distance_mi": 7.91
+ },
+ "75243": {
+  "zipcode": "75243",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.912633,
+  "lon": -96.736637,
+  "distance_mi": 10.02
+ },
+ "75244": {
+  "zipcode": "75244",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.925367,
+  "lon": -96.836334,
+  "distance_mi": 10.52
+ },
+ "75246": {
+  "zipcode": "75246",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.792496,
+  "lon": -96.772763,
+  "distance_mi": 1.78
+ },
+ "75247": {
+  "zipcode": "75247",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Unrated",
+  "lat": 32.814402,
+  "lon": -96.878295,
+  "distance_mi": 5.39
+ },
+ "75248": {
+  "zipcode": "75248",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Upper",
+  "lat": 32.969699,
+  "lon": -96.797334,
+  "distance_mi": 13.34
+ },
+ "75249": {
+  "zipcode": "75249",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.636053,
+  "lon": -96.964574,
+  "distance_mi": 13.76
+ },
+ "75252": {
+  "zipcode": "75252",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Luxury",
+  "lat": 32.996776,
+  "lon": -96.788479,
+  "distance_mi": 15.21
+ },
+ "75253": {
+  "zipcode": "75253",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Value",
+  "lat": 32.674426,
+  "lon": -96.609228,
+  "distance_mi": 13.0
+ },
+ "75254": {
+  "zipcode": "75254",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Entry",
+  "lat": 32.944116,
+  "lon": -96.80009,
+  "distance_mi": 11.57
+ },
+ "75287": {
+  "zipcode": "75287",
+  "city": "Dallas",
+  "neighborhood": null,
+  "core_submarket": null,
+  "price_tier": "Mid-Market",
+  "lat": 32.999309,
+  "lon": -96.841688,
+  "distance_mi": 15.6
+ }
+}
